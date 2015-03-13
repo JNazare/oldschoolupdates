@@ -1,0 +1,99 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'mongoose-findorcreat' ]
+2 info using npm@2.0.2
+3 info using node@v0.10.32
+4 verbose node symlink /usr/local/bin/node
+5 verbose readDependencies using package.json deps
+6 verbose cache add [ 'mongoose-findorcreat', null ]
+7 verbose cache add spec="mongoose-findorcreat" args=["mongoose-findorcreat",null]
+8 verbose parsed spec { raw: 'mongoose-findorcreat',
+8 verbose parsed spec   scope: null,
+8 verbose parsed spec   name: 'mongoose-findorcreat',
+8 verbose parsed spec   rawSpec: '',
+8 verbose parsed spec   spec: '*',
+8 verbose parsed spec   type: 'range' }
+9 verbose parsed spec { raw: 'mongoose-findorcreat',
+9 verbose parsed spec   scope: null,
+9 verbose parsed spec   name: 'mongoose-findorcreat',
+9 verbose parsed spec   rawSpec: '',
+9 verbose parsed spec   spec: '*',
+9 verbose parsed spec   type: 'range' }
+10 verbose addNamed [ 'mongoose-findorcreat', '*' ]
+11 verbose addNamed [ null, '*' ]
+12 silly lockFile fb9d2272-mongoose-findorcreat mongoose-findorcreat@*
+13 verbose lock mongoose-findorcreat@* /Users/Juliana/.npm/fb9d2272-mongoose-findorcreat.lock
+14 silly addNameRange { name: 'mongoose-findorcreat', range: '*', hasData: false }
+15 verbose mapToRegistry name mongoose-findorcreat
+16 verbose mapToRegistry uri https://registry.npmjs.org/mongoose-findorcreat
+17 verbose request on initialization, where is /mongoose-findorcreat
+18 verbose request after pass 1, where is /mongoose-findorcreat
+19 verbose request url raw /mongoose-findorcreat
+20 verbose request resolving registry [ 'https://registry.npmjs.org/', './mongoose-findorcreat' ]
+21 verbose request after pass 2, where is https://registry.npmjs.org/mongoose-findorcreat
+22 verbose request no auth needed
+23 info attempt registry request try #1 at 18:40:47
+24 verbose request id 0186f413572c7eb1
+25 http request GET https://registry.npmjs.org/mongoose-findorcreat
+26 http 404 https://registry.npmjs.org/mongoose-findorcreat
+27 verbose headers { date: 'Fri, 13 Mar 2015 22:40:44 GMT',
+27 verbose headers   server: 'Apache',
+27 verbose headers   'content-type': 'application/json',
+27 verbose headers   'cache-control': 'max-age=0',
+27 verbose headers   'content-length': '29',
+27 verbose headers   'accept-ranges': 'bytes',
+27 verbose headers   via: '1.1 varnish',
+27 verbose headers   age: '0',
+27 verbose headers   'x-served-by': 'cache-jfk1023-JFK',
+27 verbose headers   'x-cache': 'MISS',
+27 verbose headers   'x-cache-hits': '0',
+27 verbose headers   'x-timer': 'S1426286444.020241,VS0,VE93',
+27 verbose headers   'keep-alive': 'timeout=10, max=50',
+27 verbose headers   connection: 'Keep-Alive' }
+28 silly registry.get cb [ 404,
+28 silly registry.get   { date: 'Fri, 13 Mar 2015 22:40:44 GMT',
+28 silly registry.get     server: 'Apache',
+28 silly registry.get     'content-type': 'application/json',
+28 silly registry.get     'cache-control': 'max-age=0',
+28 silly registry.get     'content-length': '29',
+28 silly registry.get     'accept-ranges': 'bytes',
+28 silly registry.get     via: '1.1 varnish',
+28 silly registry.get     age: '0',
+28 silly registry.get     'x-served-by': 'cache-jfk1023-JFK',
+28 silly registry.get     'x-cache': 'MISS',
+28 silly registry.get     'x-cache-hits': '0',
+28 silly registry.get     'x-timer': 'S1426286444.020241,VS0,VE93',
+28 silly registry.get     'keep-alive': 'timeout=10, max=50',
+28 silly registry.get     connection: 'Keep-Alive' } ]
+29 silly lockFile fb9d2272-mongoose-findorcreat mongoose-findorcreat@*
+30 silly lockFile fb9d2272-mongoose-findorcreat mongoose-findorcreat@*
+31 verbose stack Error: Package not found : mongoose-findorcreat
+31 verbose stack     at RegClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:260:14)
+31 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:197:65)
+31 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:237:22)
+31 verbose stack     at Request.emit (events.js:98:17)
+31 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1146:14)
+31 verbose stack     at Request.emit (events.js:117:20)
+31 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1097:12)
+31 verbose stack     at IncomingMessage.emit (events.js:117:20)
+31 verbose stack     at _stream_readable.js:943:16
+31 verbose stack     at process._tickCallback (node.js:419:13)
+32 verbose statusCode 404
+33 verbose pkgid mongoose-findorcreat
+34 verbose cwd /Users/Juliana/Documents/repos/MediaLab/oldschoolupdates
+35 error Darwin 14.1.0
+36 error argv "node" "/usr/local/bin/npm" "install" "mongoose-findorcreat"
+37 error node v0.10.32
+38 error npm  v2.0.2
+39 error code E404
+40 error 404 Package not found : mongoose-findorcreat
+40 error 404
+40 error 404 'mongoose-findorcreat' is not in the npm registry.
+40 error 404 You should bug the author to publish it (or use the name yourself!)
+40 error 404 It was specified as a dependency of 'oldschoolupdates'
+40 error 404
+40 error 404 Note that you can also install from a
+40 error 404 tarball, folder, http url, or git url.
+41 verbose exit [ 1, true ]

@@ -1,5 +1,45 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+    .jumbotron
+        .container-fluid
+            center
+                h1 Old School Updates
+            p We want to empower grandchildren to easily share life updates with their grandparents who are not plugged into social media.
+            br
+            center
+                button.btn.btn-info.btn-lg(type='button', data-toggle='modal', data-target='#loginModal')
+                    | Get Started
+
+    .container-fluid
+        .row
+            .col-sm-6.col-sm-offset-4
+                h2 
+                    strong How it works...
+                p 1. Pick a few photos from your social media channels
+                p 2. Write a short message
+                p 3. We take care of creating and delivering your postcard
+
+    #loginModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+        .modal-dialog
+            .modal-content
+                .modal-body
+                    button.close(type='button', data-dismiss='modal', aria-label='Close')
+                        span(aria-hidden='true') &times;
+                    br
+                    br
+                    center
+                        button#js-facebook-btn.btn.btn-primary.btn-lg(type='button')
+                            | Load Facebook Pictures
+                        br
+                        br
+                        button#js-instagram-btn.btn.btn-default.btn-lg(type='button')
+                            | Load Instagram Pictures
+                    br
+                    br
+
+block scripts
+    script.
+        $('#js-facebook-btn').click(function(){
+            $(location).attr('href','/auth/facebook');
+        });
