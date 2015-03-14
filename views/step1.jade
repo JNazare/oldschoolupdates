@@ -1,0 +1,38 @@
+extends layout
+
+block stylesheets
+    link(rel='stylesheet', href='/stylesheets/postcard.css')
+    link(rel='stylesheet', href='/stylesheets/photobench.css')
+
+block content
+    .container-fluid
+        .row
+            .col-sm-6
+                h3 Step 1: Add photos
+                br
+                include ../partials/postcard
+                br
+                include ../partials/photobench
+            .col-sm-6
+                h3 Step 2: Write a short message
+                textarea.form-control(rows='3' placeholder="Dear Grandma /or Grandpa,")
+                br
+                h3 Step 3: Address your postcard
+                .row
+                    .col-sm-6
+                        textarea.form-control(rows='3' placeholder="To")
+                    .col-sm-6
+                        textarea.form-control(rows='3' placeholder="From")
+                br
+                .row
+                    .col-sm-8.col-sm-offset-2
+                            button#reviewbtn.btn.btn-info.btn-lg.btn-block(type='button')
+                                | Review Your Card
+
+
+block scripts
+    script.
+        $("#reviewbtn").click(function(){
+            $(location).attr('href','/2');
+        })
+        

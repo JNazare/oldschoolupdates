@@ -20,9 +20,21 @@
   router.get('/:step', function(req, res) {
     var step;
     step = req.params.step;
-    return res.render('index', {
-      title: 'Step page' + step.toString()
-    });
+    if (step === "1") {
+      res.render('step1', {
+        title: 'Step ' + step.toString()
+      });
+    }
+    if (step === "2") {
+      res.render('step2', {
+        title: 'Step ' + step.toString()
+      });
+    }
+    if (step === "3") {
+      return res.render('step3', {
+        title: 'Step ' + step.toString()
+      });
+    }
   });
 
 }).call(this);

@@ -1,0 +1,19 @@
+div.picture {
+	background-color: #D3D3D3;
+	border: 1px solid #333;
+	min-width: 100px;
+	min-height: 200px;
+}
+
+div.picture1 {
+	min-height: 400px;
+	border-right: none;
+}
+
+div.picture2 {
+	border-bottom: none;
+}
+
+div.picture3 {
+	border-right: none;
+}

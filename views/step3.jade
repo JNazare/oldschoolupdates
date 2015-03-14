@@ -1,0 +1,33 @@
+extends layout
+
+block stylesheets
+    link(rel='stylesheet', href='/stylesheets/postcard.css')
+
+block content
+    .container-fluid
+        .row
+            .col-sm-6.col-sm-offset-3
+                center
+                    h2 Your postcard is on its way
+                br
+                include ../partials/postcard
+        .row
+            .col-sm-6.col-sm-offset-3
+                center
+                    h3 Want a monthly reminder to send a card?
+        .row
+            .col-sm-6.col-sm-offset-3
+                center
+                    form.form-inline
+                        input.form-control(type='email', placeholder='Enter email')
+                        | &nbsp;&nbsp;
+                        button#signupbtn.btn.btn-info(type='button')
+                            | Remind Me
+
+
+
+block scripts
+    script.
+        $("#signupbtn").click(function(){
+            console.log("trigger signup action");
+        })
